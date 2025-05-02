@@ -9,9 +9,9 @@ app = Flask(__name__)
 @app.route('/run-script')
 def run_script():
     # Paths
-    network_script_path = r"\\zpro\Jobs\Test\3124522.py"
-    template_directory = r"\\taurus\punna\Jobs\Python JEs\Gokul\jobsgenericwebcrawlerapp\ScheduleNo-1"
-    venv_python = r"\\taurus\punna\Jobs\Python JEs\Gokul\jobsgenericwebcrawlerapp\.venv\Scripts\python.exe"
+    network_script_path = r"**************" #Newtwork path where file is present
+    template_directory = r"*********************" #Project template in other Nertwork
+    venv_python = r"**********************************"  # Virtual env path in project
     script_name = os.path.basename(network_script_path)
     destination_script_path = os.path.join(template_directory, script_name)
 
